@@ -418,13 +418,62 @@
       </ul>
     </div>
     </div>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
         <div class="modal" >
             <button class="modal-close" data-modal-close type="button">
                 <svg class="close-modal-icon" width="8" height="8">
                     <use href="./images/icon.svg#icon-close-modal"></use>
                 </svg>
             </button>
+            <h3 class="modal-header">Leave your contacts and we will call you back</h3>
+            <form class="modal-form">
+
+            <label class="modal-form-field">
+            <span class="modal-form-desc">Name</span> 
+            <input
+            type="text" 
+            name="user-name" 
+            class="modal-form-input" 
+            pattern="^[a-zA-Zа-яА-Я]+$"
+            minlength="2" >
+            </label>
+
+            
+            <label class="modal-form-field">
+            <span class="modal-form-desc">Phone</span> 
+            <input
+            type="tel" 
+            name="user-phone" 
+            class="modal-form-input"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx">
+            </label>
+
+            <label class="modal-form-field">
+            <span class="modal-form-desc">Email</span> 
+            <input type="email"
+            name="user-email" 
+            class="modal-form-input" >
+            </label>
+
+
+
+            <label class="modal-form-field">
+            <span class="modal-form-desc">Comment</span> 
+            <textarea 
+            name="user-message" 
+            class="modal-form-message" 
+            placeholder="Text input"></textarea>
+            </label>
+
+            <input 
+            type="checkbox" 
+            class="modal-form-check" 
+            id="user-policy"
+            name="user-policy">
+            <label for="user-policy" class="modal-form-check-desc">I accept the terms and conditions of the<a href="">Privacy Policy</a></label>
+            <button type="submit"class="modal-form-submit">Send</button>
+            </form>
         </div>
     </div>
     </footer>
