@@ -772,6 +772,7 @@ background-color: #404BBF;
   display: block;
   cursor: pointer;
   transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1) ;
+  margin-right: 8px;
 }
 
 .modal-form-check:checked + .modal-form-check-desc::before{
@@ -794,7 +795,7 @@ letter-spacing: 0.04em;
 color: #757575;
 display: flex;
 align-items: center;
-gap: 8px;
+/* gap: 8px; */
 margin-bottom: 24px;
 margin-top: 16px;
 }
@@ -818,17 +819,11 @@ color: white;
 }
 
 .footer-email-input::placeholder{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
 font-size: 12px;
 line-height:2;
-display: flex;
-align-items: center;
 margin-left: 16px;
 letter-spacing: 0.04em;
 color: rgba(255, 255, 255, 0.6);
-
 }
 
 .footer-input-wrap{
@@ -851,16 +846,20 @@ color: rgba(255, 255, 255, 0.6);
     width: 165px;
     margin-left: 24px;
     height: 40px;
-    display:block;
+    display:flex;
     outline: none;
     transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)  ;
+  
+ 
+
    
     
 
 }
 
-.icon-wrap{
+/* .icon-wrap{
  position: relative;
+ display: flex;
 }
 
 .footer-btn:is(:hover,:focus){
@@ -871,9 +870,9 @@ color: rgba(255, 255, 255, 0.6);
   display: flex;
 }
 
-/* .icon-wrap{
+.icon-wrap{
 position: relative;
-} */
+}
 
 .icon-btn-soc{
   position: absolute;
@@ -881,5 +880,12 @@ position: relative;
   right: 24px;
 
 
+
+} */
+
+
+.icon-btn-soc{
+  margin-left: 16px;
+ 
 }
 
